@@ -20,7 +20,7 @@ These four fields are mandatory.
  <LI>
   <ul>Note:
    <code>
-    If you are animation car onLocationChanged() then,
+    If you are animating car onLocationChanged() then,
    Ideal location request for car animation should be as below. Greater than the interval mentioned will give
    more good results but less than this may hamper the animation.
 
