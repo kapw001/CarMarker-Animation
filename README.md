@@ -16,7 +16,20 @@ These four fields are mandatory.
 </code>
 </pre>
 </LI>
+ <br><br>
+ <LI>
+  <ul>Note:
+   <code>
+    If you are animation car onLocationChanged() then,
+   Ideal location request for car animation should be as below. Greater than the interval mentioned will give
+   more good results but less than this may hamper the animation.
 
+    mLocationRequest = new LocationRequest();
+    mLocationRequest.setInterval(1000 * 5);
+    mLocationRequest.setFastestInterval(1000 * 3);
+     mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+   </code>
+ </LI>
 
 
 ## Dependency
