@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_marker_right"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="20dp"
+            app:cardMaxElevation="20dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:background="#262626"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#262626"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_timing_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="4"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_address_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="4"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

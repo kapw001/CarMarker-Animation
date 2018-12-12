@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/material_design_linear_scale_progress_loader"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:indicatorColor="#1fffe1"
+        app:indicatorName="BallScaleMultipleIndicator"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finding ride..."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1dbaa5"
+        />
+</FrameLayout>
