@@ -12,7 +12,8 @@ Smooth marker animation on google map along with proper turns and camera bearing
 <LI>Pass the Marker to animate, googlemap, Latlng of current position of the marker, Latlng of curent position of the user, duration of the animation & CameraUpdate of googlemap.
 <pre>
 <code>
-CarMoveAnim.startcarAnimation(marker,googleMap, startposition,endposition,duration,cameraupdate);
+<LI>CarMoveAnim.startcarAnimation(marker,googleMap, startposition,endposition,duration,cameraupdate);
+</LI>
 <br><br>
 Here marker,googlemap,startposition refers to the position of marker,end position refers to the position of the user 
 or wherever the marker needs to be placed. 
