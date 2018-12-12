@@ -25,7 +25,7 @@ public class CarMoveAnim {
 //        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
     public static void startcarAnimation(final Marker carMarker, final GoogleMap googleMap, final LatLng startPosition,
-                                         final LatLng endPosition, int duration, final CameraUpdate cameraUpdateFactory) {
+                                         final LatLng endPosition, int duration, final GoogleMap.CancelableCallback callback) {
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, 1);
         if (duration == 0 || duration<3000)
         {
@@ -46,8 +46,14 @@ public class CarMoveAnim {
                 carMarker.setPosition(newPos);
                 carMarker.setAnchor(0.5f, 0.5f);
                 carMarker.setRotation((float) bearingBetweenLocations(startPosition, endPosition));
-                if (cameraUpdateFactory != null) {
-                    googleMap.animateCamera(cameraUpdateFactory);
+                if (callback != null) {
+                    googleMap.animateCamera(CameraUpdateFactory
+                            .newCameraPosition
+                                    (new CameraPosition.Builder()
+                                            .target(newPos)
+                                            .bearing((float) bearingBetweenLocations(startPosition, endPosition))
+                                            .zoom(18f)
+                                            .build()),callback);
                 } else {
                     googleMap.animateCamera(CameraUpdateFactory
                             .newCameraPosition
