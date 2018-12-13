@@ -41,7 +41,7 @@ These four fields are mandatory.
 ## Dependency
 <pre>
 <LI>App Level:
-implementation 'com.github.tintinscorpion:CarMarker-Animation:v1.0'
+implementation 'com.github.tintinscorpion:CarMarker-Animation:1.1'
 </LI>
 <br>
 <LI>Project Level:
