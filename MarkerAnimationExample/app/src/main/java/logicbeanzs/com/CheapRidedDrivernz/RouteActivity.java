@@ -1,7 +1,6 @@
 package logicbeanzs.com.CheapRidedDrivernz;
 
 import android.Manifest;
-import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -19,7 +18,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
-import android.view.animation.LinearInterpolator;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,7 +25,6 @@ import android.widget.TextView;
 import com.demo.basegooglemap.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdate;
@@ -36,7 +33,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MapStyleOptions;
@@ -45,20 +41,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.maps.model.SquareCap;
-import com.google.maps.android.ui.IconGenerator;
 import com.logicbeanzs.carrouteanimation.CarMoveAnim;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import logicbeanzs.com.CheapRidedDrivernz.Utils.ApiClient;
 import logicbeanzs.com.CheapRidedDrivernz.Utils.DirectionUtils;
-import logicbeanzs.com.CheapRidedDrivernz.Utils.MapAnimator;
 import logicbeanzs.com.CheapRidedDrivernz.Utils.MapUtils;
-import logicbeanzs.com.CheapRidedDrivernz.Utils.Placelistener;
 
 import static com.google.android.gms.maps.model.JointType.ROUND;
-import static logicbeanzs.com.CheapRidedDrivernz.Utils.MapUtils.getBearing;
 
 public class RouteActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -189,6 +180,12 @@ public class RouteActivity extends FragmentActivity implements OnMapReadyCallbac
         this.googleMap = googleMap;
         this.googleMap.getUiSettings().setCompassEnabled(false);
         this.googleMap.getUiSettings().setMapToolbarEnabled(false);
+        this.googleMap.getUiSettings().setZoomControlsEnabled(false);
+        this.googleMap.getUiSettings().setZoomGesturesEnabled(false);
+        this.googleMap.getUiSettings().setAllGesturesEnabled(false);
+        this.googleMap.getUiSettings().setRotateGesturesEnabled(false);
+        this.googleMap.getUiSettings().setScrollGesturesEnabled(false);
+        this.googleMap.getUiSettings().setTiltGesturesEnabled(false);
         try {
             // Customise the styling of the base map using a JSON object defined
             // in a raw resource file.
@@ -300,7 +297,7 @@ public class RouteActivity extends FragmentActivity implements OnMapReadyCallbac
 
                 @Override
                 public void onCancel() {
-                    handler.postDelayed(pol,600);
+//                    handler.postDelayed(pol,600);
                 }
             });
             htmlins = ins.get(index);

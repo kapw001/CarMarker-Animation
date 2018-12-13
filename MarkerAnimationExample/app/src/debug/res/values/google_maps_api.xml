@@ -19,6 +19,7 @@
 
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
+    provide Your Valid google map key which should have directions and place api installed
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"></string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCn2caN7B99-S1AUPZ4PI1-yDnDPtWIJk4</string>
 </resources>
