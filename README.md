@@ -1,8 +1,10 @@
 # CarMarker-Animation
 [![](https://jitpack.io/v/tintinscorpion/CarMarker-Animation.svg)](https://jitpack.io/#tintinscorpion/CarMarker-Animation)
 <br>
+<meta name="google-site-verification" content="9xX5qBXiwU0-eOti0o3ujCSFXmus9BTbz6Dw5FNmtm0" />
 Smooth marker animation on google map along with proper turns and camera bearing. 
 <br><br>
+
 # Demo
 <img src="https://github.com/tintinscorpion/CarMarker-Animation/blob/master/routeanim.gif"/>
 
