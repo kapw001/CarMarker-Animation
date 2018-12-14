@@ -23,7 +23,8 @@ These four fields are mandatory.
 <LI>Optional:
 <pre>
 duration refers to the animation time. By default it will take 3000 even if 0 is passed.
-callback is the interface of Googlemap.CancellabeCallback(). It requires when the user wants to animate the next animation after the first has finished. 
+callback is the interface of Googlemap.CancellabeCallback(). It requires when the user wants to animate the next animation 
+after the first has finished else just pass null.
 <br>
 For eg-
 <code>
