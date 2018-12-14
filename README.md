@@ -10,15 +10,34 @@ Smooth marker animation on google map along with proper turns and camera bearing
 
 ## Steps:
 <UL>
-<LI>Pass the Marker to animate, googlemap, Latlng of current position of the marker, Latlng of curent position of the user, duration of the animation & CameraUpdate of googlemap.
+<LI>Pass the Marker to animate, googlemap, Latlng of current position of the marker, Latlng of curent position of the user, duration of the animation & Cancellable Callback interface of googlemap.
 <pre>
 <code>
-<LI>CarMoveAnim.startcarAnimation(marker,googleMap, startposition,endposition,duration,cameraupdate);
+<LI>CarMoveAnim.startcarAnimation(marker,googleMap, startposition,endposition,duration,callback);
 </LI>
 <br><br>
 Here marker,googlemap,startposition refers to the position of marker,end position refers to the position of the user 
 or wherever the marker needs to be placed. 
 These four fields are mandatory.
+<br><br>
+<LI>Optional:
+<pre>
+duration refers to the animation time. By default it will take 3000 even if 0 is passed.
+callback is the interface of Googlemap.CancellabeCallback(). It requires when the user wants to animate the next animation after the first has finished. 
+<br>
+For eg-
+<code>
+new GoogleMap.CancelableCallback() {
+                @Override
+                public void onFinish() {                
+                }
+                @Override
+                public void onCancel() {               
+                }
+            });
+</code>
+</pre>
+</LI>
 </code>
 </pre>
 </LI>
