@@ -43,7 +43,6 @@ new GoogleMap.CancelableCallback() {
 </code>
 </pre>
 </LI>
- <br><br>
  <LI>
   <ul>Note:
    <code>
@@ -58,7 +57,6 @@ new GoogleMap.CancelableCallback() {
    </code>
  </LI>
 
-
 ## Dependency
 <pre>
 <LI>App Level:
@@ -70,8 +68,6 @@ maven { url 'https://jitpack.io' }
 </LI>
 </pre>
 
-
- 
 
 # Developers
 <UL>
