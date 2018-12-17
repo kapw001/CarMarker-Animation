@@ -1,6 +1,6 @@
 # CarMarker-Animation
 [![](https://jitpack.io/v/tintinscorpion/CarMarker-Animation.svg)](https://jitpack.io/#tintinscorpion/CarMarker-Animation)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/085dc311bc2444b2b5b08d8a17c0faa3)](https://www.codacy.com/app/tintinscorpion/CarMarker-Animation?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tintinscorpion/CarMarker-Animation&amp;utm_campaign=Badge_Grade)
+
 <br>
 <meta name="google-site-verification" content="9xX5qBXiwU0-eOti0o3ujCSFXmus9BTbz6Dw5FNmtm0" />
 Smooth marker animation on google map along with proper turns and camera bearing. 
