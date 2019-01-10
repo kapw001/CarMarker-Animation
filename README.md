@@ -9,7 +9,7 @@ Smooth marker animation on google map along with proper turns and camera bearing
 <br>
 
 # Demo
-<img src="https://github.com/tintinscorpion/CarMarker-Animation/blob/master/routeanim.gif"/>
+<img src="https://github.com/tintinscorpion/CarMarker-Animation/blob/master/routeanim.gif" width="250" height="400"/>
 
 <br><br>
 
